@@ -12,6 +12,10 @@
 		0F624E6F1CBCCCAA003FF233 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F624E6E1CBCCCAA003FF233 /* Images.xcassets */; };
 		0F624E721CBCCCAA003FF233 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F624E701CBCCCAA003FF233 /* MainMenu.xib */; };
 		0F624E7E1CBCCCAA003FF233 /* ChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F624E7D1CBCCCAA003FF233 /* ChartTests.m */; };
+		0F624E8F1CBCCF66003FF233 /* ZMCChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F624E8E1CBCCF66003FF233 /* ZMCChartView.m */; };
+		0F624E911CBCD111003FF233 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F624E901CBCD111003FF233 /* CoreGraphics.framework */; };
+		0F624E941CBCD2BD003FF233 /* ZMCBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F624E931CBCD2BD003FF233 /* ZMCBarChartView.m */; };
+		848CC3161CBFE4FF003602A2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848CC3151CBFE4FF003602A2 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,12 @@
 		0F624E771CBCCCAA003FF233 /* ChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F624E7C1CBCCCAA003FF233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F624E7D1CBCCCAA003FF233 /* ChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartTests.m; sourceTree = "<group>"; };
+		0F624E8D1CBCCF66003FF233 /* ZMCChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMCChartView.h; sourceTree = "<group>"; };
+		0F624E8E1CBCCF66003FF233 /* ZMCChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMCChartView.m; sourceTree = "<group>"; };
+		0F624E901CBCD111003FF233 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0F624E921CBCD2BD003FF233 /* ZMCBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZMCBarChartView.h; path = Chart.xcodeproj/../ZMCBarChartView.h; sourceTree = SOURCE_ROOT; };
+		0F624E931CBCD2BD003FF233 /* ZMCBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZMCBarChartView.m; path = Chart.xcodeproj/../ZMCBarChartView.m; sourceTree = SOURCE_ROOT; };
+		848CC3151CBFE4FF003602A2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848CC3161CBFE4FF003602A2 /* QuartzCore.framework in Frameworks */,
+				0F624E911CBCD111003FF233 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +70,8 @@
 		0F624E5B1CBCCCAA003FF233 = {
 			isa = PBXGroup;
 			children = (
+				848CC3151CBFE4FF003602A2 /* QuartzCore.framework */,
+				0F624E901CBCD111003FF233 /* CoreGraphics.framework */,
 				0F624E661CBCCCAA003FF233 /* Chart */,
 				0F624E7A1CBCCCAA003FF233 /* ChartTests */,
 				0F624E651CBCCCAA003FF233 /* Products */,
@@ -80,6 +94,10 @@
 				0F624E6A1CBCCCAA003FF233 /* AppDelegate.m */,
 				0F624E6E1CBCCCAA003FF233 /* Images.xcassets */,
 				0F624E701CBCCCAA003FF233 /* MainMenu.xib */,
+				0F624E8D1CBCCF66003FF233 /* ZMCChartView.h */,
+				0F624E8E1CBCCF66003FF233 /* ZMCChartView.m */,
+				0F624E921CBCD2BD003FF233 /* ZMCBarChartView.h */,
+				0F624E931CBCD2BD003FF233 /* ZMCBarChartView.m */,
 				0F624E671CBCCCAA003FF233 /* Supporting Files */,
 			);
 			path = Chart;
@@ -210,6 +228,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F624E941CBCD2BD003FF233 /* ZMCBarChartView.m in Sources */,
+				0F624E8F1CBCCF66003FF233 /* ZMCChartView.m in Sources */,
 				0F624E6D1CBCCCAA003FF233 /* main.m in Sources */,
 				0F624E6B1CBCCCAA003FF233 /* AppDelegate.m in Sources */,
 			);
@@ -401,6 +421,7 @@
 				0F624E831CBCCCAA003FF233 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F624E841CBCCCAA003FF233 /* Build configuration list for PBXNativeTarget "ChartTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +430,7 @@
 				0F624E861CBCCCAA003FF233 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

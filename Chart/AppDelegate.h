@@ -7,9 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ZMCChartView.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate,ZMCChartViewDataSource, ZMCChartViewDelegate >
 
+@property (weak) IBOutlet NSView *myView;
 
 @end
 
